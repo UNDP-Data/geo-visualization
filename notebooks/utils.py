@@ -1,6 +1,6 @@
 import httpx
 import typing as t
-GEOHUB_DATA_URL = 'https://geohub.data.undp.org/api/datasets'
+GEOHUB_DATA_URL = 'https://dev.undpgeohub.org/api/datasets'
 
 
 def search_datasets(url=GEOHUB_DATA_URL, query=None) -> t.Dict[str,t.List]:
