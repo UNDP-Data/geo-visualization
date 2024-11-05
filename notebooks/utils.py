@@ -25,7 +25,8 @@ def search_datasets(url=GEOHUB_DATA_URL, query=None) -> t.Dict[str,t.List]:
 
 
 if __name__ == '__main__':
-    results = search_datasets(query='bangladesh buildings')
+    results = search_datasets(query='Kenya Roads')
+    print(f'Found {len(results)} datasets')
     for ds_id, links in results.items():
         for l in links:
             print(l)
